@@ -1,4 +1,5 @@
-import Game from "../Game";
+// import Game2 from "../Game/Game2";
+import Game from "../Game/Game";
 import Header from "../Header";
 
 function App() {

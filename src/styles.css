@@ -31,13 +31,14 @@ body {
 }
 
 button {
-  margin: 0;
-  padding: 0;
+  margin: 4px;
+  padding: 4px;
   border: none;
-  background: transparent;
+  background: white;
   cursor: pointer;
   text-align: left;
-  color: inherit;
+  color: black;
+  border-radius: 4px;
 }
 
 .wrapper {
@@ -179,10 +180,13 @@ h1 {
 .happy.banner {
   background: var(--color-success);
   color: white;
+  gap: 1rem;
 }
 .sad.banner {
   background: var(--color-error);
   color: white;
+  gap: 1rem;
+
 }
 
 .visually-hidden {
@@ -195,6 +199,8 @@ h1 {
   padding: 0;
   border: 0;
 }
+
+
 
 /*
   Modal styles
@@ -217,6 +223,40 @@ h1 {
 }
 .modal-title {
   margin-bottom: 0.5em;
+}
+
+.keyboard-row{
+  display:flex;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.keyboard-key{
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 2px;
+  place-content: center;
+  aspect-ratio: 1 / 1;
+  width:2rem;
+  border: 2px solid var(--color-gray-700);
+  border-radius: var(--radius);
+  font-size: 1.5rem;
+}
+.keyboard-key.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.keyboard-key.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.keyboard-key.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
 }
 
 /*
